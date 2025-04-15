@@ -1,0 +1,253 @@
+﻿@page "/weather"
+
+@inject BlazorApp.Services.GetWeatherService GetWeatherService
+@inject Services.AuthService AuthService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@inject HttpClient Http
+
+
+@if (user == null)
+{
+    <div class="auth-prompt">
+        <h3>Login or Sign Up to Get Weather Details</h3>
+        <p>Please log in or sign up to access the weather forecast.</p>
+        <button class="btn btn-primary" @onclick="NavigateToLogin">Login</button>
+        <button class="btn btn-secondary" @onclick="NavigateToSignUp">Sign Up</button>
+    </div>
+}
+else
+{
+    <!-- Existing weather content -->
+    <div class="weather-container @weatherClass fade-in">
+        <h3 class="text-center mb-3 slide-in">Weather Forecast</h3>
+        <div class="input-group mb-3 slide-in">
+            <input class="form-control" @bind="city" placeholder="Enter city" />
+            <button class="btn btn-primary" @onclick="FetchWeather" disabled="@isLoading">Get Weather</button>
+            <button class="btn btn-secondary" @onclick="GetLocation" disabled="@isLoading">Use My Location</button>
+        </div>
+
+        @if (isLoading)
+        {
+            <div class="text-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        }
+
+        @if (!string.IsNullOrEmpty(errorMessage))
+        {
+            <div class="alert alert-danger slide-in" role="alert">
+                <strong>Error:</strong> @errorMessage
+            </div>
+        }
+
+        @if (weatherData is not null)
+        {
+            <div class="weather-details mt-3 slide-in">
+                <div class="weather-card @GetWeatherClass(weatherData.Weather) glass-effect">
+                    <div class="weather-icon">
+                        @GetWeatherIcon(weatherData.Weather)
+                    </div>
+                    <div class="weather-info">
+                        <h4>@weatherData!.Name</h4>
+                        <p><strong>Temperature:</strong> @weatherData!.Temperature °C</p>
+                        <p><strong>Weather:</strong> @weatherData!.Weather</p>
+                        <p><strong>Description:</strong> @weatherData!.Description</p>
+                        <p><strong>Wind Speed:</strong> @weatherData!.Wind m/s</p>
+                        <p><strong>Humidity:</strong> @weatherData!.Humidity %</p>
+                        <p><strong>Pressure:</strong> @weatherData!.Pressure hPa</p>
+                        <p><strong>Visibility:</strong> @weatherData!.Visibility km</p>
+                        <p><strong>Sunrise:</strong> @ConvertToDateTime(weatherData!.Sunrise)</p>
+                        <p><strong>Sunset:</strong> @ConvertToDateTime(weatherData!.Sunset)</p>
+                        <button class="btn btn-like" @onclick="() => LikeLocation(weatherData.Name)">
+                            ❤️ Like
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-4 slide-in">5-Day Forecast</h4>
+            <div class="weather-details slide-in">
+                @foreach (var forecast in forecastData)
+                {
+                    <div class="weather-card @GetWeatherClass(forecast.Weather) glass-effect">
+                        <div class="weather-icon">
+                            @GetWeatherIcon(forecast.Weather)
+                        </div>
+                        <div class="weather-info">
+                            <h5>@forecast.Date</h5>
+                            <p><strong>Temperature:</strong> @forecast.Temperature °C</p>
+                            <p><strong>Weather:</strong> @forecast.Weather</p>
+                            <p><strong>Description:</strong> @forecast.Description</p>
+                            <p><strong>Wind Speed:</strong> @forecast.Wind m/s</p>
+                            <p><strong>Humidity:</strong> @forecast.Humidity %</p>
+                            <p><strong>Pressure:</strong> @forecast.Pressure hPa</p>
+                            <p><strong>Visibility:</strong> @forecast.Visibility km</p>
+                            <button class="btn btn-like" @onclick="() => LikeLocation(forecast.Name)">
+                                ❤️ Like
+                            </button>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}
+
+@code {
+    private string city = "";
+    private BlazorApp.Services.WeatherData? weatherData;
+    private List<BlazorApp.Services.WeatherData> forecastData = new();
+    private string errorMessage = string.Empty;
+    private string weatherClass = "";
+    private bool isLoading = false;
+    private Supabase.Gotrue.User? user;
+    private List<string> likedLocations = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await AuthService.GetUser();
+    }
+    private void NavigateToLogin()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+
+    private void NavigateToSignUp()
+    {
+        NavigationManager.NavigateTo("/signup");
+    }
+
+    private async Task FetchWeather()
+    {
+        try
+        {
+            isLoading = true;
+            errorMessage = string.Empty;
+            weatherData = null;
+            forecastData = new();
+
+            if (string.IsNullOrWhiteSpace(city))
+            {
+                errorMessage = "City name cannot be empty. Please enter a valid city.";
+                return;
+            }
+
+            if (int.TryParse(city, out _))
+            {
+                errorMessage = "Invalid city name. Please enter a valid city name, not a number.";
+                return;
+            }
+
+            weatherData = await GetWeatherService.GetWeatherAsync(city);
+
+            if (weatherData is null || string.IsNullOrEmpty(weatherData.Name))
+            {
+                errorMessage = "City not found. Please enter a valid city name.";
+            }
+            else
+            {
+                SetWeatherTheme(weatherData.Weather);
+                forecastData = await GetWeatherService.Get5DayForecastAsync(city);
+            }
+        }
+        catch
+        {
+            errorMessage = "An error occurred while fetching weather data. Please try again.";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private async Task GetLocation()
+    {
+        try
+        {
+            isLoading = true;
+            var location = await JSRuntime.InvokeAsync<Location>("getLocation");
+            var response = await GetWeatherService.GetWeatherByCoordsAsync(location.Latitude, location.Longitude);
+
+            if (response != null)
+            {
+                weatherData = response;
+                SetWeatherTheme(weatherData.Weather);
+                forecastData = await GetWeatherService.Get5DayForecastByCoordsAsync(location.Latitude, location.Longitude);
+            }
+            else
+            {
+                errorMessage = "Unable to fetch weather data for your location.";
+            }
+        }
+        catch
+        {
+            errorMessage = "Unable to get your location. Please ensure location services are enabled.";
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void SetWeatherTheme(string weatherCondition)
+    {
+        weatherClass = weatherCondition.ToLower() switch
+        {
+            "clear" => "clear-theme",
+            "clouds" => "cloudy-theme",
+            "rain" => "rainy-theme",
+            "snow" => "snowy-theme",
+            _ => "default-theme"
+        };
+    }
+
+    private string ConvertToDateTime(long timestamp)
+    {
+        return DateTimeOffset.FromUnixTimeSeconds(timestamp).ToLocalTime().ToString("HH:mm:ss");
+    }
+
+    private string GetWeatherIcon(string weatherCondition)
+    {
+        return weatherCondition.ToLower() switch
+        {
+            "clear" => "☀️",
+            "clouds" => "☁️",
+            "rain" => "🌧️",
+            "snow" => "❄️",
+            "thunderstorm" => "⛈️",
+            "mist" => "🌫️",
+            _ => "🌤️"
+        };
+    }
+
+    private string GetWeatherClass(string weatherCondition)
+    {
+        return weatherCondition.ToLower() switch
+        {
+            "clear" => "clear",
+            "clouds" => "clouds",
+            "rain" => "rain",
+            "snow" => "snow",
+            "thunderstorm" => "thunderstorm",
+            "mist" => "mist",
+            _ => "default"
+        };
+    }
+
+    private void LikeLocation(string locationName)
+    {
+        if (!likedLocations.Contains(locationName))
+        {
+            likedLocations.Add(locationName);
+        }
+    }
+
+    public class Location
+    {
+        public double Latitude { get; set; }
+        public double Longitude { get; set; }
+    }
+}

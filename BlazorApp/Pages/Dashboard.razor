@@ -1,0 +1,53 @@
+﻿@page "/dashboard"
+
+@inject BlazorApp.Services.GetWeatherService GetWeatherService
+
+<div class="container mt-5">
+    <h3 class="text-center mb-3">Top 5 Global Cities Dashboard</h3>
+    <div class="row">
+        @foreach (var city in topCities)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">@city</h5>
+                        <button class="btn btn-primary" @onclick="() => FetchWeather(city)">Get Weather</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (weatherData is not null)
+    {
+        <div class="card shadow mt-3">
+            <div class="card-body">
+                <h5 class="card-title">@weatherData!.Name</h5>
+                <p class="card-text">Temperature: @weatherData!.Temperature °C</p>
+                <p class="card-text">Weather: @weatherData!.Weather</p>
+                <p class="card-text">Description: @weatherData!.Description</p>
+                <p class="card-text">Wind Speed: @weatherData!.Wind m/s</p>
+                <p class="card-text">Humidity: @weatherData!.Humidity %</p>
+                <p class="card-text">Pressure: @weatherData!.Pressure hPa</p>
+                <p class="card-text">Visibility: @weatherData!.Visibility km</p>
+                <p class="card-text">Sunrise: @ConvertToDateTime(weatherData!.Sunrise)</p>
+                <p class="card-text">Sunset: @ConvertToDateTime(weatherData!.Sunset)</p>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private List<string> topCities = new List<string> { "New York", "London", "Tokyo", "Paris", "Berlin" };
+    private BlazorApp.Services.WeatherData? weatherData;
+
+    private async Task FetchWeather(string city)
+    {
+        weatherData = await GetWeatherService.GetWeatherAsync(city);
+    }
+
+    private string ConvertToDateTime(long timestamp)
+    {
+        return DateTimeOffset.FromUnixTimeSeconds(timestamp).ToLocalTime().ToString("HH:mm:ss");
+    }
+}

@@ -1,0 +1,28 @@
+﻿@inject Services.AuthService AuthService
+
+<div>
+    @if (user != null)
+    {
+        <p>Welcome, @user.Email!</p>
+        <button @onclick="Logout">Logout</button>
+    }
+    else
+    {
+        <p>Please <a href="/login">login</a> or <a href="/signup">sign up</a>.</p>
+    }
+</div>
+
+@code {
+    private Supabase.Gotrue.User? user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await AuthService.GetUser();
+    }
+
+    private async Task Logout()
+    {
+        await AuthService.SignOut();
+        user = null;
+    }
+}
