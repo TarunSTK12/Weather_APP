@@ -72,6 +72,10 @@
               "version": "[9.0.2, )",
               "autoReferenced": true
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
             "Supabase": {
               "target": "Package",
               "version": "[1.1.1, )"

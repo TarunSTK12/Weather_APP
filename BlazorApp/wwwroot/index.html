@@ -10,6 +10,30 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="BlazorApp.styles.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+
+    <script>
+        window.getCurrentLocation = async function () {
+            return new Promise((resolve, reject) => {
+                if (!navigator.geolocation) {
+                    reject("Geolocation not supported");
+                }
+
+                navigator.geolocation.getCurrentPosition(
+                    position => {
+                        resolve({
+                            latitude: position.coords.latitude,
+                            longitude: position.coords.longitude
+                        });
+                    },
+                    error => {
+                        reject(error.message);
+                    }
+                );
+            });
+        }
+    </script>
+
 </head>
 
 <body>

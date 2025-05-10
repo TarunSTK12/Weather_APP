@@ -1,3 +1,4 @@
+app.cs
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0;
@@ -17,9 +18,42 @@ html, body {
     justify-content: center;
     align-items: center;
 }
+.dashboard-bg {
+    background-color: #001f3f; /* dark blue */
+    color: white;
+    min-height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+    .dashboard-bg .card {
+        background-color: #003366; /* slightly lighter blue for contrast */
+        color: white;
+    }
+/* Default light theme */
+.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark theme */
+.dark-theme {
+    background-color: #001F3F; /* Dark blue */
+    color: #ffffff;
+}
+
+    /* Optional: apply to specific areas */
+    .dark-theme .card {
+        background-color: #003366;
+        color: white;
+    }
+.page.dark-theme .nav-menu a {
+    color: white;
+}
+
 .welcome-heading-text, .city-gradient-text {
     color: black /* Ensure text is white */
 }
+
 .welcome-card {
     background: transparent; /* Light background for contrast */
     padding: 2rem;

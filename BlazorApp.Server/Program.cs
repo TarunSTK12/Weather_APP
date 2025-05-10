@@ -1,10 +1,18 @@
 using BlazorApp.Server.Services;
-
+using MongoDB.Driver;
 
 //using BlazorApp;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<MongoDBSettings>(
+    builder.Configuration.GetSection("MongoDB"));
+
+builder.Services.AddSingleton<IMongoClient>(sp =>
+    new MongoClient(builder.Configuration["MongoDB:ConnectionString"]));
+
+builder.Services.AddScoped<IMongoDatabase>(sp =>
+    sp.GetRequiredService<IMongoClient>().GetDatabase("WeatherForecast"));
 
 
 // Add CORS Policy
@@ -31,6 +39,12 @@ builder.Services.AddSwaggerGen();
 // Register HttpClient and WeatherForecastService
 builder.Services.AddHttpClient<WeatherForecastService>();
 //builder.Services.AddScoped<AuthService>();
+
+builder.Services.AddHttpClient("WeatherAPI", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5291/"); // Must point to your actual weather API controller
+});
+
 
 var app = builder.Build();
 

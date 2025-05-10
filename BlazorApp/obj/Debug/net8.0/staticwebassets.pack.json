@@ -9,12 +9,32 @@
       "PackagePath": "staticwebassets\\BlazorApp.styles.css"
     },
     {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\1-night.jpg",
+      "PackagePath": "staticwebassets\\1-night.jpg"
+    },
+    {
       "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\bg1.jpeg",
       "PackagePath": "staticwebassets\\bg1.jpeg"
     },
     {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\bg10.jpg",
+      "PackagePath": "staticwebassets\\bg10.jpg"
+    },
+    {
       "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\bg2.jpg",
       "PackagePath": "staticwebassets\\bg2.jpg"
+    },
+    {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\bg8.jpg",
+      "PackagePath": "staticwebassets\\bg8.jpg"
+    },
+    {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\blossom.jpg",
+      "PackagePath": "staticwebassets\\blossom.jpg"
+    },
+    {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\blue_clouds.jpg",
+      "PackagePath": "staticwebassets\\blue_clouds.jpg"
     },
     {
       "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\css\\app.css",
@@ -29,6 +49,10 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\diff-weather-bg.png",
+      "PackagePath": "staticwebassets\\diff-weather-bg.png"
+    },
+    {
       "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
@@ -41,8 +65,20 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\js\\location.js",
+      "PackagePath": "staticwebassets\\js\\location.js"
+    },
+    {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\rainbow1_clouds.jpg",
+      "PackagePath": "staticwebassets\\rainbow1_clouds.jpg"
+    },
+    {
       "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "D:\\WiseWorks\\BlazorApp\\BlazorApp\\wwwroot\\service-worker.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

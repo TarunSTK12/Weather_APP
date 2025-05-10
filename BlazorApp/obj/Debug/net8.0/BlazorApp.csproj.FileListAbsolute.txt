@@ -2,6 +2,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\blazor.boot
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\blazor.webassembly.js
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\BlazorApp.pdb
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\BlazorApp.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\DnsClient.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\dotnet.js
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\dotnet.js.map
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\dotnet.native.js
@@ -45,9 +46,13 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Microsoft.V
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Win32.Primitives.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Win32.Registry.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\MimeMapping.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\MongoDB.Bson.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\MongoDB.Driver.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\mscorlib.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\netstandard.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Newtonsoft.Json.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\SharpCompress.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Snappier.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Supabase.Core.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Supabase.Functions.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Supabase.Gotrue.wasm
@@ -220,6 +225,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Xml.
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Xml.XPath.XDocument.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Websocket.Client.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\WindowsBase.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\ZstdSharp.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Transactions.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Collections.Specialized.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\mscorlib.wasm.gz
@@ -285,6 +291,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Thre
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Supabase.Realtime.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Drawing.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Microsoft.JSInterop.wasm.gz
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\MongoDB.Bson.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.Serialization.Json.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Supabase.Functions.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Net.wasm.gz
@@ -339,6 +346,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Net.
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Console.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Text.Encodings.Web.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\WindowsBase.wasm.gz
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Snappier.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Formats.Tar.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\dotnet.runtime.js.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.Serialization.Primitives.wasm.gz
@@ -383,6 +391,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Microsoft.A
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Private.Xml.Linq.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Threading.Tasks.Dataflow.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Diagnostics.DiagnosticSource.wasm.gz
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\DnsClient.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\MimeMapping.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Resources.Reader.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Net.Ping.wasm.gz
@@ -394,6 +403,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Diag
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Threading.Tasks.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Diagnostics.Tracing.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Xml.XmlSerializer.wasm.gz
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\SharpCompress.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\dotnet.runtime.js.map.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\dotnet.native.js.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Threading.Tasks.Extensions.wasm.gz
@@ -423,6 +433,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Web.
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Threading.Channels.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.IO.Pipes.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.Abstractions.wasm.gz
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\MongoDB.Driver.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.IO.Compression.FileSystem.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Private.CoreLib.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.Serialization.Xml.wasm.gz
@@ -440,12 +451,14 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Runt
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Security.Claims.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Security.Cryptography.X509Certificates.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.InteropServices.wasm.gz
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\ZstdSharp.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\Microsoft.VisualBasic.Core.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.Serialization.wasm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\BlazorApp.staticwebassets.runtime.json
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\BlazorApp.staticwebassets.endpoints.json
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\BlazorApp.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\BlazorApp.pdb
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\DnsClient.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -474,7 +487,11 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryS
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.JSInterop.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\MimeMapping.dll
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\MongoDB.Bson.dll
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\MongoDB.Driver.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\SharpCompress.dll
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Snappier.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Supabase.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Supabase.Core.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Supabase.Functions.dll
@@ -486,6 +503,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\System.IdentityModel.Tokens.Jw
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\System.IO.Pipelines.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\System.Reactive.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Websocket.Client.dll
+D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\ZstdSharp.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.CSharp.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.VisualBasic.Core.dll
 D:\WiseWorks\BlazorApp\BlazorApp\bin\Debug\net8.0\Microsoft.VisualBasic.dll
@@ -670,6 +688,8 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.AssemblyInfoInputs.c
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.AssemblyInfo.cs
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.csproj.CoreCompileInputs.cache
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.MvcApplicationPartsAssemblyInfo.cache
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.sourcelink.json
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\DnsClient.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Authorization.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.AspNetCore.Components.Forms.wasm
@@ -698,7 +718,11 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.IO.Recyclable
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.JSInterop.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.JSInterop.WebAssembly.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\MimeMapping.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\MongoDB.Bson.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\MongoDB.Driver.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Newtonsoft.Json.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\SharpCompress.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Snappier.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Supabase.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Supabase.Core.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Supabase.Functions.wasm
@@ -710,6 +734,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\System.IdentityModel.To
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\System.IO.Pipelines.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\System.Reactive.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Websocket.Client.wasm
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\ZstdSharp.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.CSharp.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.VisualBasic.Core.wasm
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\webcil\Microsoft.VisualBasic.wasm
@@ -886,6 +911,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\scopedcss\projectbundle\Blazor
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\blazor.build.boot-extension.json
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\blazor.boot.json
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\1601lvuy2o-mv535bwyet.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\q90zyj92w4-wommcjgqe2.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\ddzhoay4ml-9hthb25ooi.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\vkauwj411i-7vog68joiv.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\xg5nljqsof-3aide0k5eo.gz
@@ -914,7 +940,11 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\y19g6dls3s-yxkatvvq
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\ai5mqx7q0p-t5qsxd5ym3.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\sej3nvdkx9-sxn7b5wzyk.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\qbmho66vgd-gmxjevqz69.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\auz4ywoy15-tm7erdjf93.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\wamvf8nqcn-e9nxqjziwm.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\5hk4vtivzm-qkbufwhni2.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\rm1d1mawl4-ndjc0pl2yg.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\j0ly3hubuo-asich9tl4y.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\1lmqw21zpd-qyt6qogdl5.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\8klxf85bbu-zcuz262cdn.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\bgqqeein3s-das9utiwul.gz
@@ -926,6 +956,7 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\6m85z1f7hp-8p36zpd3
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\f54p3nq1mq-iudrcw56e1.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\wruaisdpvi-c15raio1t6.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\4cbu08wze1-sntjl98ana.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\ytvqmo9xhr-7dh8077hi8.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\mi2608m4ey-4wtf73xt7w.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\zd95p6f5cn-gl30q32o85.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\ybdackeqdb-hvsibehafk.gz
@@ -1104,6 +1135,9 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\7yc9qcv4lw-tjcz0u77
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\scrxjpfcoc-tptq2av103.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\1fybnanqqp-lfu7j35m59.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\ofpowj728f-oyz0vx2fzb.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\e8x9j5c3gt-rlfxqtikal.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\elg2uvrrc6-btmjbglh4b.gz
+D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\k4a7psrd0j-nyynjwzwb8.gz
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\staticwebassets.build.json
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\staticwebassets.development.json
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -1118,6 +1152,3 @@ D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.dll
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\refint\BlazorApp.dll
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\BlazorApp.pdb
 D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\ref\BlazorApp.dll
-D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\e8x9j5c3gt-gjvfdhms41.gz
-D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\elg2uvrrc6-0fh4c2azap.gz
-D:\WiseWorks\BlazorApp\BlazorApp\obj\Debug\net8.0\compressed\k4a7psrd0j-xk2dlaj1ah.gz

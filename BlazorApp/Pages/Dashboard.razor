@@ -2,16 +2,32 @@
 
 @inject BlazorApp.Services.GetWeatherService GetWeatherService
 
-<div class="container mt-5">
-    <h3 class="text-center mb-3">Top 5 Global Cities Dashboard</h3>
+<div class="container dashboard-bg" style="background-color: midnightblue" >
+    <h3 class="text-center mb-3" style="color: aliceblue;">Top 5 Global Cities Dashboard</h3>
+
     <div class="row">
-        @foreach (var city in topCities)
+        @foreach (var city in topGlobalCities)
         {
             <div class="col-md-4 mb-3">
                 <div class="card shadow">
                     <div class="card-body">
                         <h5 class="card-title">@city</h5>
                         <button class="btn btn-primary" @onclick="() => FetchWeather(city)">Get Weather</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <h3 class="text-center mb-3 mt-5" style="color:aliceblue">Top 5 Indian Cities Dashboard</h3>
+    <div class="row">
+        @foreach (var city in topIndianCities)
+        {
+            <div class="col-md-4 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">@city</h5>
+                        <button class="btn btn-success" @onclick="() => FetchWeather(city)">Get Weather</button>
                     </div>
                 </div>
             </div>
@@ -38,7 +54,9 @@
 </div>
 
 @code {
-    private List<string> topCities = new List<string> { "New York", "London", "Tokyo", "Paris", "Berlin" };
+    private List<string> topGlobalCities = new() { "New York", "London", "Tokyo", "Paris", "Berlin" };
+    private List<string> topIndianCities = new() { "Mumbai", "Delhi", "Chennai", "Bengaluru", "Kolkata" };
+
     private BlazorApp.Services.WeatherData? weatherData;
 
     private async Task FetchWeather(string city)

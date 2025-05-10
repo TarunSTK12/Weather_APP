@@ -6,6 +6,7 @@ D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\BlazorApp.Server.deps.j
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\BlazorApp.Server.runtimeconfig.json
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\BlazorApp.Server.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\BlazorApp.Server.pdb
+D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\DnsClient.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
@@ -13,7 +14,11 @@ D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Microsoft.IdentityModel
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\MimeMapping.dll
+D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\MongoDB.Bson.dll
+D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\MongoDB.Driver.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\SharpCompress.dll
+D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Snappier.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Supabase.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Supabase.Core.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Supabase.Functions.dll
@@ -27,6 +32,7 @@ D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\System.Reactive.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\Websocket.Client.dll
+D:\WiseWorks\BlazorApp\BlazorApp.Server\bin\Debug\net8.0\ZstdSharp.dll
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.csproj.AssemblyReference.cache
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.GeneratedMSBuildEditorConfig.editorconfig
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.AssemblyInfoInputs.cache
@@ -34,6 +40,7 @@ D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.Assemb
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.csproj.CoreCompileInputs.cache
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.MvcApplicationPartsAssemblyInfo.cs
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.MvcApplicationPartsAssemblyInfo.cache
+D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\BlazorApp.Server.sourcelink.json
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\scopedcss\bundle\BlazorApp.Server.styles.css
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\staticwebassets.build.json
 D:\WiseWorks\BlazorApp\BlazorApp.Server\obj\Debug\net8.0\staticwebassets.development.json
